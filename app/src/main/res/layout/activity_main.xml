@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp" >
+
+    <LinearLayout
+        android:id="@+id/linLayStartHS"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start HS:   " />
+
+            <EditText
+                android:id="@+id/editTextOrigin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="   HS Name:   " />
+            </LinearLayout>
+
+        <TextView
+            android:id="@+id/requestOriginTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="   EFA request Origin   :" />
+
+        <TextView
+            android:id="@+id/responseOriginTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:maxHeight="100dp"
+            android:hint="   EFA response   :" />
+
+        <Button
+            android:id="@+id/buttonSearchOrigin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="   Start HS Suchen   " />
+    </LinearLayout>
+
+
+    <!-- Ziel Haltestelle -->
+    <LinearLayout
+        android:id="@+id/linLayZielHS"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ziel HS:   " />
+
+            <EditText
+                android:id="@+id/editTextDestination"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="   HS Name:   " />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/requestDestinationTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="   EFA request Destination   :" />
+
+        <TextView
+            android:id="@+id/responseDestinationTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:maxHeight="100dp"
+            android:hint="   EFA response   :" />
+
+        <Button
+            android:id="@+id/buttonSearchDestination"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="   Ziel HS Suchen   " />
+    </LinearLayout>
+
+
+    <!-- Trip Request-->
+    <LinearLayout
+        android:id="@+id/linLayTripRequest"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/buttonTripRequest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:text="   Verbindungen Suchen   " />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
